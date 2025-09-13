@@ -6,11 +6,13 @@ $effect(() => {
   (async () => {
     const response = await fetch("/hello");
 
+    console.log(response);
+
     if (!response.ok) {
       throw new Error("Failed to fetch");
     }
 
-    const data = await response.json();
+    const data = await response.text();
 
     hello = data;
   })();

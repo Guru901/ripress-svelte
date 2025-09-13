@@ -1,5 +1,5 @@
 [package]
-name = "rust-react"
+name = "ripress-svelte"
 version = "0.1.0"
 edition = "2021"
 
