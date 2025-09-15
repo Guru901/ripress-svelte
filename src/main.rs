@@ -7,7 +7,6 @@ async fn main() {
     app.static_files("/", "./dist").unwrap();
 
     app.get("/hello", |_, res| async {
-        println!("Hello from Ripress!");
         return res.text("Hello from Ripress!");
     });
 
